@@ -28,9 +28,9 @@ public class ProductService {
     }
 
     @Transactional(readOnly = true)
-    public Page<ProductDTO> findAll(Pageable pageable) {
-        Page<Product> product = repository.findAll(pageable);
-        return product.map(x -> new ProductDTO(x));
+    public Page<ProductDTO> findAll(String name, Pageable pageable) {
+        Page<Product> product = repository.searchByName(name, pageable);
+        return product.map(ProductDTO::new);
     }
 
     @Transactional
