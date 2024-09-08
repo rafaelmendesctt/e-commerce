@@ -28,7 +28,7 @@ public class Product {
             inverseJoinColumns = @JoinColumn(name = "category_id"))
     private Set<Category> categories = new HashSet<>();
 
-    @OneToMany(mappedBy = "id.product")
+    @OneToMany(mappedBy = "id.product", cascade = CascadeType.ALL)
     private Set<OrderItem> items = new HashSet<>();
 
     public Product() {
