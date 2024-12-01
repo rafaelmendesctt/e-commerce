@@ -3,7 +3,7 @@
 ## Documentos de Requisitos
 A API REST criada é uma plataforma de E-Commerce, com funcionalidades essenciais para gerenciar pedidos, produtos, categorias, usuários e pagamentos. A seguir, apresento um diagrama UML que ilustra a estrutura do projeto, com as entidades principais: Order, OrderItem, Product, Category, Payment, User e o enum OrderStatus. 
 
-![image](https://github.com/user-attachments/assets/c599c60a-aa6a-4f91-b960-4239f4bffe89)
+![1](https://github.com/user-attachments/assets/3ec8f5a8-ef3c-4f4b-83fd-9bcffd15023d)
 
 Este diagrama foi crucial para entender os requisitos e organizar o modelo de dados do sistema de maneira eficiente.
 
@@ -15,7 +15,7 @@ Para persistência de dados, foi utilizado o banco de dados H2 em modo de teste.
 ## Camadas, CRUD, Exceções e Validações
 A API REST foi desenvolvida e organizada com o padrão de camadas (DTOs, Repositories, Controllers e Services), seguindo boas práticas e aplicando o padrão arquitetural MVC (Model-View-Controller). Cada camada tem uma responsabilidade bem definida, facilitando a manutenção e escalabilidade da aplicação. Foram implementadas as operações básicas do CRUD (Criar, Ler, Atualizar, Excluir) utilizando os verbos HTTP.
 
-![image](https://github.com/user-attachments/assets/935cbdc4-7a5a-4428-8625-a73e3ed5ab89)
+![2](https://github.com/user-attachments/assets/33763d58-47c1-4646-97e5-d966971a1670)
 
 ### Exceções e Handlers
 Para tratar exceções de forma centralizada, criamos um ControllerExceptionHandler que captura erros como ResourceNotFoundException, retornando respostas estruturadas e amigáveis para o usuário.
@@ -75,4 +75,4 @@ JWT: Ao fazer login, o sistema gera um token JWT que é utilizado para autentica
 
 CORS: Configuramos as regras de CORS para controlar quais origens podem acessar a API.
 
-![image](https://github.com/user-attachments/assets/f70cae1a-d64b-4bde-b3c7-9b11befeab9e)
+![3](https://github.com/user-attachments/assets/2e756d96-39ce-4847-ba60-42d4f6f4d088)
